@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>30-Day Social Content Generator | AI Social Media Content Tool</title>
+<meta name="description" content="Generate 30 days of social media post ideas, captions, hashtags and suggested posting times in minutes. Reusable AI content workflow for creators and small businesses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbf6ef; --bg2:#f7eee6; --ink:#26211e; --muted:#74675f;
+  --line:#ead8cc; --accent:#cf8569; --accent2:#e4aa94;
+  --card:rgba(255,252,248,.88); --white:#fffdfa;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:
+    radial-gradient(circle at 12% 6%,rgba(230,173,152,.18),transparent 24%),
+    radial-gradient(circle at 90% 24%,rgba(201,130,105,.10),transparent 22%),
+    linear-gradient(180deg,var(--bg) 0%,#fffaf6 52%,var(--bg2) 100%);
+  color:var(--ink);line-height:1.75;font-weight:300;-webkit-font-smoothing:antialiased
+}
+.wrap{max-width:980px;margin:0 auto;padding:0 30px}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:400;letter-spacing:-.3px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:30px;max-width:980px;margin:0 auto}
+nav .brand{font-family:'Playfair Display',serif;font-size:21px;letter-spacing:.3px}
+nav .brand span{color:var(--accent)}
+nav a{color:var(--muted);text-decoration:none;font-size:12px;letter-spacing:1.5px;text-transform:uppercase}
+nav a:hover{color:var(--accent)}
+header{padding:82px 0 72px;text-align:center;position:relative}
+header:before{content:"DONE-FOR-YOU";display:inline-block;border:1px solid var(--accent2);border-radius:999px;
+  padding:8px 22px;font-size:11px;letter-spacing:3px;color:#5c4b44;margin-bottom:25px;background:rgba(255,255,255,.4)}
+header .eyebrow{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+header h1{font-size:58px;line-height:1.08;max-width:760px;margin:0 auto 26px}
+header h1::first-line{color:var(--accent)}
+header p{color:var(--muted);font-size:17px;max-width:600px;margin:0 auto;font-style:italic;font-family:'Playfair Display',serif}
+.rule{width:72px;height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent);margin:38px auto 0}
+.intro{padding:58px 0;text-align:center;color:#625750;font-size:16px;max-width:700px;margin:0 auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:28px 0 20px}
+.card{background:var(--card);border:1px solid rgba(201,130,105,.20);border-radius:18px;padding:34px 32px;
+  box-shadow:0 14px 40px rgba(88,57,42,.055);backdrop-filter:blur(6px);transition:.35s ease}
+.card:hover{transform:translateY(-5px);box-shadow:0 20px 45px rgba(88,57,42,.10);border-color:rgba(201,130,105,.38)}
+.card .idx{font-family:'Playfair Display',serif;font-size:14px;color:var(--accent);letter-spacing:2px}
+.card h3{font-size:23px;margin:12px 0 10px;line-height:1.35}
+.card p{color:var(--muted);font-size:14px}
+.note{margin:55px 0;padding:30px 36px;border:1px solid var(--line);border-radius:18px;background:rgba(255,253,250,.8);
+  text-align:center;box-shadow:0 12px 35px rgba(88,57,42,.045)}
+.note strong{font-weight:500;color:var(--accent)}
+.note p{color:#625750;font-size:15px}
+.steps{padding:44px 0;text-align:center}
+.steps h2{font-size:32px!important}
+.steps .row{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+.steps .step{flex:1;min-width:200px;max-width:280px;background:rgba(255,253,250,.76);border:1px solid var(--line);
+  border-radius:18px;padding:28px 24px;box-shadow:0 10px 30px rgba(88,57,42,.04)}
+.steps .step .n{font-family:'Playfair Display',serif;font-size:34px;color:var(--accent)}
+.steps .step h4{font-family:'Playfair Display',serif;font-weight:400;font-size:19px;margin:8px 0}
+.steps .step p{color:var(--muted);font-size:13px}
+.closing{padding:70px 30px 58px;text-align:center;margin-top:30px;border-radius:28px;
+  background:linear-gradient(145deg,rgba(255,253,250,.92),rgba(246,234,224,.88));border:1px solid var(--line);
+  box-shadow:0 22px 60px rgba(88,57,42,.07)}
+.closing h2{font-size:36px;margin-bottom:16px}
+.closing p{color:var(--muted);max-width:520px;margin:0 auto 22px;font-style:italic;font-family:'Playfair Display',serif}
+.price{font-family:'Playfair Display',serif;font-size:48px;color:var(--accent);margin:12px 0 2px}
+.price small{font-size:14px;color:var(--muted);font-family:'Inter',sans-serif}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--accent),#b96f58);color:#fff;padding:16px 38px;border-radius:10px;
+  text-decoration:none;font-size:12px;letter-spacing:2px;text-transform:uppercase;transition:.3s;margin-top:15px;
+  box-shadow:0 12px 26px rgba(185,111,88,.24)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 32px rgba(185,111,88,.32)}
+footer{padding:55px 0 60px;text-align:center;color:var(--muted);font-size:11px;letter-spacing:1px;margin-top:42px}
+@media(max-width:640px){
+  .grid{grid-template-columns:1fr}
+  header{padding:58px 20px 48px}
+  header h1{font-size:40px}
+  nav{padding:22px}
+  nav a{font-size:10px}
+  .wrap{padding:0 20px}
+  .closing{border-radius:20px}
+}
+</style>
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="keywords" content="AI social media content generator, 30 day content generator, social media content generator, AI content planner, social media post generator, AI caption generator, content calendar generator, content ideas for small business, creator content tool, social media marketing tool">
+<meta name="author" content="ContentFlow AI">
+<meta name="theme-color" content="#fbf6ef">
+<meta property="og:type" content="product">
+<meta property="og:title" content="30-Day Social Content Generator | AI Social Media Content Tool">
+<meta property="og:description" content="Generate 30 days of social media post ideas, captions, hashtags and suggested posting times in minutes with a reusable AI workflow.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="30-Day Social Content Generator">
+<meta name="twitter:description" content="Generate a month of social media content ideas, captions, hashtags and posting times in minutes.">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"30-Day Social Content Generator",
+  "applicationCategory":"BusinessApplication",
+  "operatingSystem":"Web / Google Colab",
+  "description":"A reusable AI workflow that generates 30 days of social media post ideas, captions, hashtags and suggested posting times.",
+  "offers":{"@type":"Offer","price":"5.00","priceCurrency":"USD","availability":"https://schema.org/InStock"}
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="brand">Content<span>Flow</span> AI</div>
+  <a href="https://faucetb2002.gumroad.com/l/aoedn">Buy on Gumroad</a>
+</nav>
+
+<header>
+  <div class="eyebrow">AI Workflow · No Prompt Packs</div>
+  <h1>30 Days of Social Content.<br>Done in Minutes.</h1>
+  <p>Generate a complete month of content ideas, captions, hashtags and suggested posting times with one simple AI workflow.</p>
+  <div class="rule"></div>
+</header>
+
+<section class="wrap intro">
+<p>Need a faster way to plan social media content? This AI social media content generator creates 30 days of post ideas, ready-to-edit captions, hashtags and suggested posting times in minutes. Built for creators, small businesses, online sellers and marketers who want a practical content calendar without starting from a blank page.</p>
+</section>
+
+<section class="wrap">
+  <div class="grid">
+    <div class="card">
+      <div class="idx">01</div>
+      <h3>30 Days, Done</h3>
+      <p>A full month of posts — title, body, hashtags, and best time to post — exported as one clean CSV you can schedule anywhere.</p>
+    </div>
+    <div class="card">
+      <div class="idx">02</div>
+      <h3>Zero Prompt Writing</h3>
+      <p>The workflow is already built. You don't write prompts — you just run it and copy the output.</p>
+    </div>
+    <div class="card">
+      <div class="idx">03</div>
+      <h3>Works With Your Key</h3>
+      <p>Runs on Google Colab. Bring any OpenAI-compatible key, keep full control, pay only for what you use.</p>
+    </div>
+    <div class="card">
+      <div class="idx">04</div>
+      <h3>For Creators & Shops</h3>
+      <p>Built for small brands, solo creators, and anyone who needs steady content without hiring a social manager.</p>
+    </div>
+  </div>
+
+  <div class="note">
+    <p><strong>What you get:</strong> 1 Google Colab notebook + 1 setup guide + your 30-day content CSV.<br>
+    No subscription. Buy once, use forever.</p>
+  </div>
+</section>
+
+<section class="wrap steps">
+  <h2 style="font-size:28px">How it works</h2>
+  <div class="row">
+    <div class="step"><div class="n">1</div><h4>Open</h4><p>Click the button below — it opens the product on Gumroad.</p></div>
+    <div class="step"><div class="n">2</div><h4>Download</h4><p>Get the notebook + guide after purchase. Open in Google Colab (free).</p></div>
+    <div class="step"><div class="n">3</div><h4>Run</h4><p>Paste your key, hit Run. In minutes, your 30-day content CSV is ready.</p></div>
+  </div>
+</section>
+
+<section class="wrap closing">
+  <h2>Stop staring at a blank post.</h2>
+  <p>Thirty days of content, generated — not brainstormed. One small purchase, a whole month of momentum.</p>
+  <div class="price">$5 <small>one-time</small></div>
+  <a class="btn" href="https://faucetb2002.gumroad.com/l/aoedn">Get 30 Days of Content →</a>
+</section>
+
+<footer>ContentFlow AI · AI workflow tools · Sarawak, Malaysia</footer>
+
+</body>
+</html>
